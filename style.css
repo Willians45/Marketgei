@@ -1,0 +1,155 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: poppins,sans-serif;
+}
+
+header {
+    display: flex;
+    width: 90%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+}
+button {
+    font-family: poppins,sans-serif;
+}
+.logo-container {
+    flex: 0;
+}
+
+nav {
+    flex: 2;
+}
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    text-decoration: none;
+    font-size: 18px;
+    color: #5f5f79
+}
+.carts {
+    flex: 1;
+}
+
+.presentation {
+    display: flex;
+    margin: auto;
+    width: 85%;
+    min-height: 80vh;
+    align-items: center;
+}
+
+.introduction {
+    flex: 1;
+}
+
+.intro-text h1 {
+    font-size: 44px;
+    font-weight: 500;
+    background: linear-gradient(to right, #494964, #6f6f89);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.intro-text {
+    margin-top: 5px;
+    font-size: 22px;
+    color: #3e3e4e;
+}
+.cta {
+    padding: 30px 0px 0px 0px;
+}
+.cta-add{
+    border: none;
+    background: none;
+    color: #442b41;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.cover {
+    flex: 0.8;
+}
+
+.cover img{
+    height: 60vh;
+    filter: drop-shadow(0px 5px 3px black);
+    animation: drop 1.5s ease;
+}
+
+.big-circle {
+    opacity: 0.4;
+    height: 80%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+}
+.mid-circle {
+    position: absolute;
+    top: 30%;
+    right: 30%;
+    z-index: -1;
+    height: 60%;
+    opacity: 0.4;
+}
+.small-circle {
+    position: absolute;
+    bottom: 0%;
+    left: 20%;
+    z-index: -1;
+}
+.phone-select {
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    right: 21.4%;
+    top: 84%;
+}
+
+@keyframes drop{
+    0%{
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .presentation {
+        flex-direction: column;
+    }
+    .introduction {
+        margin-top: 5vh;
+        text-align: center;
+    }
+    .intro-text h1 {
+        font-size: 30px;
+    }
+    .intro-text p {
+        font-size: 18px;
+    }
+    .cta {
+        padding: 10px 0px 0px 0px;
+    }
+    .cta-add {
+        top: 20%;
+    }
+    .cover img {
+        height: 40vh;
+    }
+    .phone-select {
+        height: 15%;
+        left: 44%;
+    }
+}
